@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Línea del Tiempo - Mes Patrio</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+    color: #006847; /* Verde patrio */
+    margin-bottom: 10px;
+  }
+
+  p.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  /* Contenedor principal de la línea del tiempo */
+  .timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 4px solid #006847; /* Línea vertical verde */
+  }
+
+  /* Cada evento de la línea del tiempo */
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  /* Círculo indicador (punto rojo) */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px; /* Alineación con la línea verde */
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #CE1126; /* Rojo patrio */
+    border: 3px solid white;
+  }
+
+  /* Fecha */
+  .timeline-date {
+    display: inline-block;
+    background-color: #006847;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  /* Cuadro de contenido */
+  .timeline-content {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-top: 3px solid #CE1126;
+  }
+
+  .timeline-content h3 {
+    margin-top: 0;
+    color: #111;
+  }
+
+  .timeline-content p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Línea del Tiempo: Mes Patrio en México</h1>
+  <p class="subtitulo">Fechas históricas más importantes conmemoradas en el mes de septiembre</p>
+
+  <div class="timeline">
+
+    <!-- EVENTO 1 -->
+    <div class="timeline-item">
+      <span class="timeline-date">13 de Septiembre</span>
+      <div class="timeline-content">
+        <h3>Día de los Niños Héroes</h3>
+        <p>Se conmemora la heroica defensa del Castillo de Chapultepec en 1847 por parte de los cadetes del Colegio Militar durante la intervención estadounidense.</p>
+      </div>
+    </div>
+
+    <!-- EVENTO 2 -->
+    <div class="timeline-item">
+      <span class="timeline-date">15 de Septiembre</span>
+      <div class="timeline-content">
+        <h3>El Grito de Independencia</h3>
+        <p>Por la noche, las autoridades mexicanas en todo el país (encabezadas por el Presidente de la República) recrean el histórico Grito de Dolores dando inicio a la fiesta patria.</p>
+      </div>
+    </div>
+
+    <!-- EVENTO 3 -->
+    <div class="timeline-item">
+      <span class="timeline-date">16 de Septiembre</span>
+      <div class="timeline-content">
+        <h3>Inicio de la Independencia de México (1810)</h3>
+        <p>Aniversario del levantamiento en armas convocado por el cura Miguel Hidalgo y Costilla. Es un día de descanso obligatorio y se realiza el tradicional Desfile Militar.</p>
+      </div>
+    </div>
+
+    <!-- EVENTO 4 -->
+    <div class="timeline-item">
+      <span class="timeline-date">27 de Septiembre</span>
+      <div class="timeline-content">
+        <h3>Consumación de la Independencia (1821)</h3>
+        <p>El Ejército Trigarante, encabezado por Agustín de Iturbide, entra triunfal a la Ciudad de México, dando fin formal a 11 años de guerra por la independencia.</p>
+      </div>
+    </div>
+
+    <!-- EVENTO 5 -->
+    <div class="timeline-item">
+      <span class="timeline-date">30 de Septiembre</span>
+      <div class="timeline-content">
+        <h3>Natalicio de José María Morelos y Pavón (1765)</h3>
+        <p>Se conmociona el nacimiento del "Siervo de la Nación", uno de los principales líderes caudillos de la segunda etapa de la Independencia de México.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

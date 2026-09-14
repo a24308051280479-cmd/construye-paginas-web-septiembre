@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personajes Ilustres del Mes Patrio</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-bottom: 40px;
+  }
+
+  header {
+    background-color: #006847; 
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 5px solid #CE1126; 
+  }
+
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+
+  .contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+
+  .tarjeta {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-top: 4px solid #006847;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tarjeta-header {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .tarjeta-header h2 {
+    font-size: 20px;
+    color: #006847;
+    margin-bottom: 5px;
+  }
+
+  .badge-fecha {
+    display: inline-block;
+    background-color: #CE1126;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .tarjeta-cuerpo {
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .tarjeta-cuerpo strong {
+    color: #222;
+  }
+
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 22px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Personajes Clave del Mes Patrio</h1>
+  <p>Héroes históricos y sus aportaciones en las fechas patrias de septiembre</p>
+</header>
+
+<main class="contenedor-grid">
+
+ 
+  <article class="tarjeta">
+    <div class="tarjeta-header">
+      <h2>Miguel Hidalgo y Costilla</h2>
+      <span class="badge-fecha">16 de Septiembre de 1810</span>
+    </div>
+    <div class="tarjeta-cuerpo">
+      <p><strong>Participación:</strong> Encabezó el "Grito de Dolores", haciendo sonar las campanas de su parroquia para convocar al pueblo a levantarse en armas contra el dominio español, dando inicio formal al movimiento de Independencia.</p>
+    </div>
+  </article>
+
+  
+  <article class="tarjeta">
+    <div class="tarjeta-header">
+      <h2>Josefa Ortiz de Domínguez</h2>
+      <span class="badge-fecha">13 a 15 de Septiembre de 1810</span>
+    </div>
+    <div class="tarjeta-cuerpo">
+      <p><strong>Participación:</strong> "La Corregidora" fue pieza clave en la Conspiración de Querétaro. Al ser descubiertos los planes insurgentes, logró enviar un aviso oportuno a Ignacio Allende y Miguel Hidalgo, permitiendo adelantar el inicio de la lucha armada.</p>
+    </div>
+  </article>
+
+
+  <article class="tarjeta">
+    <div class="tarjeta-header">
+      <h2>Los Niños Héroes</h2>
+      <span class="badge-fecha">13 de Septiembre de 1847</span>
+    </div>
+    <div class="tarjeta-cuerpo">
+      <p><strong>Participación:</strong> Seis jóvenes cadetes del Colegio Militar (Juan de la Barrera, Juan Escutia, Agustín Melgar, Fernando Montes de Oca, Vicente Suárez y Francisco Márquez) defendieron heroicamente el Castillo de Chapultepec frente a la invasión estadounidense.</p>
+    </div>
+  </article>
+
+ 
+  <article class="tarjeta">
+    <div class="tarjeta-header">
+      <h2>Agustín de Iturbide y Vicente Guerrero</h2>
+      <span class="badge-fecha">27 de Septiembre de 1821</span>
+    </div>
+    <div class="tarjeta-cuerpo">
+      <p><strong>Participación:</strong> Al mando del Ejército Trigarante, marcharon de manera triunfal en la Ciudad de México para declarar de forma oficial la consumación de la Independencia de México tras 11 años de guerra.</p>
+    </div>
+  </article>
+
+
+  <article class="tarjeta">
+    <div class="tarjeta-header">
+      <h2>José María Morelos y Pavón</h2>
+      <span class="badge-fecha">30 de Septiembre de 1765</span>
+    </div>
+    <div class="tarjeta-cuerpo">
+      <p><strong>Participación:</strong> Líder insurgente conocido como el "Siervo de la Nación". Se le conmemora en este mes por su natalicio. Fue quien organizó la segunda etapa de la guerra y redactó los "Sentimientos de la Nación".</p>
+    </div>
+  </article>
+
+</main>
+
+</body>
+</html>
