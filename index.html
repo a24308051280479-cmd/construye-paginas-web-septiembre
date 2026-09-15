@@ -1,145 +1,172 @@
 <!DOCTYPE html>
+<!-- Define que este documento es un archivo HTML5 estándar -->
 <html lang="es">
+<!-- Elemento raíz del documento, configurado con el idioma español -->
 <head>
-<title>Septiembre: Mes Patrio - ¡Viva México!</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background-color: #006847;
-  padding: 25px;
-  text-align: center;
-  font-size: 28px;
-  color: white;
-}
-
-nav {
-  background-color: #CE1126;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  background-color: #9b0b1b;
-}
-
-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-article {
-  padding: 10px;
-  color: #333;
-  line-height: 1.6;
-}
-
-.contenedor-imagen {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.contenedor-imagen img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 3px solid #006847;
-}
-
-
-.contenedor-botones {
-  max-width: 800px;
-  margin: 30px auto;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 0 10px;
-}
-
-.btn-patrio {
-  display: inline-block;
-  background-color: #006847;
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  border: 2px solid #004d34;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  text-align: center;
-}
-
-.btn-patrio:hover {
-  background-color: #CE1126;
-  border-color: #9b0b1b;
-  transform: translateY(-2px);
-}
-
-footer {
-  background-color: #333;
-  padding: 15px;
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
+  <!-- Título que aparece en la pestaña de la barra del navegador -->
+  <title>Septiembre: Mes Patrio - ¡Viva México!</title>
   
-  .contenedor-botones {
-    flex-direction: column;
-  }
+  <!-- Configura la codificación de caracteres para permitir acentos y caracteres especiales (como la Ñ) -->
+  <meta charset="utf-8">
   
-  .btn-patrio {
-    width: 100%;
-  }
-}
-</style>
+  <!-- Hace que el sitio sea adaptable (responsive) en pantallas de móviles y tabletas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+    /* Aplica un modelo de caja universal donde el padding y border se incluyen en el ancho total */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Estilos generales para el cuerpo de la página (fuente base, sin márgenes por defecto y fondo gris claro) */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Estilo del encabezado superior (color verde patrio, texto blanco y centrado) */
+    header {
+      background-color: #006847;
+      padding: 25px;
+      text-align: center;
+      font-size: 28px;
+      color: white;
+    }
+
+    /* Fondo rojo patrio para la barra de navegación */
+    nav {
+      background-color: #CE1126;
+    }
+
+    /* Formato de la lista de navegación: quita viñetas y distribuye los elementos horizontalmente mediante Flexbox */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Estilos individuales para los enlaces dentro de la navegación */
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Cambia el color de fondo a un rojo más oscuro al pasar el cursor sobre los enlaces */
+    nav ul li a:hover {
+      background-color: #9b0b1b;
+    }
+
+    /* Tarjeta o contenedor del contenido principal: centrado, blanco, con sombra y esquinas redondeadas */
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Formato de texto del contenido dentro del artículo */
+    article {
+      padding: 10px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Alineación centrada para los bloques que contienen imágenes */
+    .contenedor-imagen {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    /* Reglas para que las imágenes sean adaptables, tengan esquinas redondeadas y un borde verde */
+    .contenedor-imagen img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #006847;
+    }
+
+    /* Estructura para agrupar y distanciar los botones en la parte inferior */
+    .contenedor-botones {
+      max-width: 800px;
+      margin: 30px auto;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+
+    /* Estilo visual tipo botón para los enlaces de navegación rápida (verde con sombra) */
+    .btn-patrio {
+      display: inline-block;
+      background-color: #006847;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      border: 2px solid #004d34;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-align: center;
+    }
+
+    /* Efecto interactivo: pasa a rojo y sube un par de píxeles al colocar el mouse encima */
+    .btn-patrio:hover {
+      background-color: #CE1126;
+      border-color: #9b0b1b;
+      transform: translateY(-2px);
+    }
+
+    /* Pie de página en color gris oscuro */
+    footer {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+    }
+
+    /* Separación vertical mínima para los párrafos dentro del pie de página */
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* Media Query para pantallas pequeñas (móviles con ancho igual o menor a 600px):
+       Alinea los menús y botones verticalmente para facilitar la navegación táctil */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      
+      .contenedor-botones {
+        flex-direction: column;
+      }
+      
+      .btn-patrio {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
+<!-- Encabezado con el título visible del sitio -->
 <header>
   <h1>¡Viva México! - Celebración del Mes Patrio</h1>
 </header>
 
+<!-- Menú de navegación con enlaces que dirigen a secciones internas (#id) -->
 <nav>
   <ul>
     <li><a href="#inicio">Inicio</a></li>
@@ -148,34 +175,40 @@ footer p {
   </ul>
 </nav>
 
+<!-- Sección principal con el contenido histórico -->
 <section id="inicio">
   <article>
     <h2>La Independencia de México</h2>
     <p>El Mes Patrio en México se celebra durante todo septiembre, siendo la fecha principal la noche del 15 y el día 16 de septiembre, cuando se conmemora el inicio de la lucha por la Independencia nacional en 1810.</p>
     
+    <!-- Contenedor e imagen de la bandera -->
     <div class="contenedor-imagen">
-      <img src="bandera.jpg">
-
+      <img src="bandera.jpg" alt="Bandera de México">
     </div>
 
+    <!-- Subtítulo con ID para anclaje del menú de navegación -->
     <h3 id="historia">El Grito de Dolores</h3>
     <p>La madrugada del 16 de septiembre de 1810, el cura Miguel Hidalgo y Costilla hizo sonar las campanas de la parroquia de Dolores para convocar al pueblo a levantarse en armas. Este evento es conocido como el "Grito de Dolores" y marcó el comienzo de la lucha por la libertad.</p>
 
+    <!-- Contenedor e imagen temática -->
     <div class="contenedor-imagen">
-      <img src="¡AAAAAAAAH!.jpg">
+      <img src="¡AAAAAAAAH!.jpg" alt="Representación del Grito de Dolores">
     </div>
 
+    <!-- Subtítulo con ID para anclaje de tradiciones -->
     <h3 id="tradiciones">Tradiciones Patrias</h3>
     <p>Durante este mes, las familias mexicanas acostumbran adornar sus casas con banderas, escuchar música mariachi y disfrutar de platillos tradicionales como el pozole, los chiles en nogada, los tacos y los pambazos.</p>
   </article>
 </section>
 
+<!-- Sección con botones que enlazan a páginas externas del sitio -->
 <div class="contenedor-botones">
   <a href="linea_del_tiempo.html" class="btn-patrio">Fechas importantes (Línea de tiempo)</a>
   <a href="personajes.html" class="btn-patrio">Personajes ilustres</a>
   <a href="datos-curiosos.html" class="btn-patrio">Datos Curiosos y Mitos</a>
 </div>
 
+<!-- Pie de página con información académica del autor -->
 <footer>
   <p><strong>Nombre del alumno:</strong> Luis Daniel Aguilar Mena</p>
   <p><strong>No. de control:</strong> 0479</p>
