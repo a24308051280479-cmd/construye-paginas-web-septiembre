@@ -1,66 +1,82 @@
 <!DOCTYPE html>
+<!-- Indica al navegador que el documento utiliza el estándar HTML5 -->
 <html lang="es">
+<!-- Elemento raíz de la página, configurado en idioma español -->
 <head>
+<!-- Permite la interpretación correcta de acentos, eñes y caracteres especiales -->
 <meta charset="UTF-8">
+
+<!-- Ajusta la escala del sitio para que sea adaptable (responsive) en pantallas móviles -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Título que aparece en la pestaña del navegador -->
 <title>Mitos y Datos Curiosos del Mes Patrio</title>
+
 <style>
+  /* Reset global: elimina márgenes/rellenos por defecto y unifica el cálculo de tamaños */
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
+  /* Estilos generales para todo el cuerpo de la página */
   body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    padding-bottom: 40px;
+    background-color: #f7f7f7; /* Fondo gris claro */
+    color: #333; /* Color de texto base en gris oscuro */
+    padding-bottom: 40px; /* Margen inferior para evitar que el contenido pegue al borde */
   }
 
+  /* Encabezado principal estilo patrio */
   header {
-    background-color: #006847;
+    background-color: #006847; /* Verde patrio */
     color: white;
     text-align: center;
     padding: 30px 15px;
-    border-bottom: 5px solid #CE1126;
+    border-bottom: 5px solid #CE1126; /* Borde inferior rojo patrio */
   }
 
+  /* Tamaño y espacio para el título del header */
   header h1 {
     font-size: 26px;
     margin-bottom: 8px;
   }
 
+  /* Tamaño y transparencia para el subtítulo del header */
   header p {
     font-size: 15px;
     opacity: 0.9;
   }
 
+  /* Contenedor central para limitar el ancho y centrar el contenido en pantalla */
   .contenedor {
     max-width: 850px;
     margin: 30px auto;
     padding: 0 20px;
   }
 
-  
+  /* Estilo base tipo tarjeta blanca con sombra suave */
   .tarjeta-curiosa {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    border-left: 6px solid #ccc;
+    border-left: 6px solid #ccc; /* Borde lateral base */
   }
 
+  /* Borde lateral rojo para las tarjetas categorizadas como mito */
   .tarjeta-curiosa.mito {
     border-left-color: #CE1126; 
   }
 
+  /* Borde lateral verde para las tarjetas categorizadas como dato */
   .tarjeta-curiosa.dato {
     border-left-color: #006847; 
   }
 
-
+  /* Estilo base para las insignias o etiquetas en mayúsculas */
   .etiqueta {
     display: inline-block;
     font-size: 11px;
@@ -72,15 +88,18 @@
     margin-bottom: 10px;
   }
 
+  /* Fondo rojo para etiquetas de mitos y verde para etiquetas de datos */
   .etiqueta.mito { background-color: #CE1126; }
   .etiqueta.dato { background-color: #006847; }
 
+  /* Estilo para los títulos dentro de cada tarjeta */
   .tarjeta-curiosa h2 {
     font-size: 18px;
     color: #111;
     margin-bottom: 10px;
   }
 
+  /* Formato de lectura para el texto de los párrafos */
   .tarjeta-curiosa p {
     line-height: 1.6;
     color: #555;
@@ -88,6 +107,7 @@
     margin-bottom: 8px;
   }
 
+  /* Énfasis en negrita dentro de las tarjetas */
   .tarjeta-curiosa p strong {
     color: #222;
   }
@@ -95,14 +115,16 @@
 </head>
 <body>
 
+<!-- Encabezado visible del sitio -->
 <header>
   <h1>Mitos y Datos Curiosos del Mes Patrio</h1>
   <p>Verdades e historias populares sobre la Independencia y tradiciones de México</p>
 </header>
 
+<!-- Área principal del contenido -->
 <main class="contenedor">
 
-  
+  <!-- Tarjeta 1: Mito -->
   <article class="tarjeta-curiosa mito">
     <span class="etiqueta mito">Mito vs Realidad</span>
     <h2>¿Por qué el Grito se da la noche del 15 de septiembre?</h2>
@@ -110,14 +132,14 @@
     <p><strong>La realidad:</strong> El llamado a las armas ocurrió en la madrugada del 16 de septiembre (alrededor de las 5:00 a.m.). La costumbre de celebrarlo la noche anterior fue impulsada popularmente durante el porfiriato para hacer coincidir la fiesta nacional con el cumpleaños de Porfirio Díaz (15 de septiembre).</p>
   </article>
 
-  
+  <!-- Tarjeta 2: Dato -->
   <article class="tarjeta-curiosa dato">
     <span class="etiqueta dato">Dato Curioso</span>
     <h2>El origen patrio de los Chiles en Nogada</h2>
     <p>Fueron creados por las monjas agustinas del convento de Santa Mónica en Puebla para celebrar la firma de los Tratados de Córdoba en 1821. Decoraron el platillo vistiendo los colores del Ejército Trigarante: verde (perejil), blanco (nogada) y rojo (granada).</p>
   </article>
 
-  
+  <!-- Tarjeta 3: Mito -->
   <article class="tarjeta-curiosa mito">
     <span class="etiqueta mito">Mito Histórico</span>
     <h2>¿Existió realmente "El Pípila"?</h2>
@@ -125,14 +147,14 @@
     <p><strong>La realidad:</strong> Los historiadores concuerdan en que representa una figura simbólica que sintetiza el valor colectivo de los mineros que combatieron en esa batalla, más que una hazaña individual aislada.</p>
   </article>
 
-  
+  <!-- Tarjeta 4: Dato -->
   <article class="tarjeta-curiosa dato">
     <span class="etiqueta dato">Dato Curioso</span>
     <h2>La campana original viaja desde Dolores</h2>
     <p>La campana de Dolores que el Presidente toca cada 15 de septiembre en el Balcón Nacional no pertenecía a Palacio. Estuvo en la parroquia de Dolores Hidalgo, Guanajuato, hasta que en 1896 fue trasladada a la Ciudad de México por órdenes del gobierno.</p>
   </article>
 
-  
+  <!-- Tarjeta 5: Mito -->
   <article class="tarjeta-curiosa mito">
     <span class="etiqueta mito">Mito vs Realidad</span>
     <h2>Juan Escutia envuelto en la bandera</h2>
