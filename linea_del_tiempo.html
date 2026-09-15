@@ -1,63 +1,75 @@
 <!DOCTYPE html>
+<!-- Define que el documento utiliza el estándar HTML5 -->
 <html lang="es">
+<!-- Elemento raíz configurado con el idioma español -->
 <head>
+<!-- Permite renderizar correctamente acentos, eñes y caracteres especiales -->
 <meta charset="UTF-8">
+
+<!-- Ajusta el tamaño de la pantalla en dispositivos móviles (diseño adaptable) -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Texto que se muestra en la pestaña del navegador -->
 <title>Línea del Tiempo - Mes Patrio</title>
+
 <style>
+  /* Regla universal para que el padding y border se incluyan en el ancho total de cada elemento */
   * {
     box-sizing: border-box;
   }
 
+  /* Estilos globales del fondo, tipografía y margen general de la página */
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; /* Fondo gris claro */
     margin: 0;
     padding: 20px;
-    color: #333;
+    color: #333; /* Texto principal en gris oscuro */
   }
 
+  /* Estilo del título principal */
   h1 {
     text-align: center;
     color: #006847; /* Verde patrio */
     margin-bottom: 10px;
   }
 
+  /* Estilo para la bajada o subtítulo del encabezado */
   p.subtitulo {
     text-align: center;
     color: #666;
     margin-bottom: 40px;
   }
 
-  /* Contenedor principal de la línea del tiempo */
+  /* Contenedor principal de la línea del tiempo: define el eje vertical verde */
   .timeline {
     position: relative;
     max-width: 700px;
     margin: 0 auto;
     padding-left: 30px;
-    border-left: 4px solid #006847; /* Línea vertical verde */
+    border-left: 4px solid #006847; /* Línea vertical verde principal */
   }
 
-  /* Cada evento de la línea del tiempo */
+  /* Espaciado para cada bloque de evento */
   .timeline-item {
     position: relative;
     margin-bottom: 30px;
   }
 
-  /* Círculo indicador (punto rojo) */
+  /* Pseudoelemento para crear los puntos rojos (círculos) sobre la línea verde */
   .timeline-item::before {
     content: '';
     position: absolute;
-    left: -39px; /* Alineación con la línea verde */
+    left: -39px; /* Posiciona el círculo sobre el borde izquierdo del contenedor */
     top: 5px;
     width: 14px;
     height: 14px;
-    border-radius: 50%;
+    border-radius: 50%; /* Transforma el recuadro en una circunferencia */
     background-color: #CE1126; /* Rojo patrio */
-    border: 3px solid white;
+    border: 3px solid white; /* Borde blanco para resaltar sobre el fondo */
   }
 
-  /* Fecha */
+  /* Etiqueta tipo insignia para destacar la fecha */
   .timeline-date {
     display: inline-block;
     background-color: #006847;
@@ -69,20 +81,22 @@
     margin-bottom: 8px;
   }
 
-  /* Cuadro de contenido */
+  /* Tarjeta blanca donde vive la descripción del evento */
   .timeline-content {
     background-color: white;
     padding: 15px 20px;
     border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-top: 3px solid #CE1126;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para dar relieve */
+    border-top: 3px solid #CE1126; /* Detalle superior en rojo patrio */
   }
 
+  /* Ajuste para el título dentro de la tarjeta del evento */
   .timeline-content h3 {
     margin-top: 0;
     color: #111;
   }
 
+  /* Ajuste para el cuerpo de texto en la tarjeta */
   .timeline-content p {
     margin-bottom: 0;
     line-height: 1.5;
@@ -92,12 +106,14 @@
 </head>
 <body>
 
+  <!-- Encabezado de la página -->
   <h1>Línea del Tiempo: Mes Patrio en México</h1>
   <p class="subtitulo">Fechas históricas más importantes conmemoradas en el mes de septiembre</p>
 
+  <!-- Contenedor general que agrupa todos los eventos cronológicos -->
   <div class="timeline">
 
-    <!-- EVENTO 1 -->
+    <!-- EVENTO 1: 13 de Septiembre -->
     <div class="timeline-item">
       <span class="timeline-date">13 de Septiembre</span>
       <div class="timeline-content">
@@ -106,7 +122,7 @@
       </div>
     </div>
 
-    <!-- EVENTO 2 -->
+    <!-- EVENTO 2: 15 de Septiembre -->
     <div class="timeline-item">
       <span class="timeline-date">15 de Septiembre</span>
       <div class="timeline-content">
@@ -115,7 +131,7 @@
       </div>
     </div>
 
-    <!-- EVENTO 3 -->
+    <!-- EVENTO 3: 16 de Septiembre -->
     <div class="timeline-item">
       <span class="timeline-date">16 de Septiembre</span>
       <div class="timeline-content">
@@ -124,7 +140,7 @@
       </div>
     </div>
 
-    <!-- EVENTO 4 -->
+    <!-- EVENTO 4: 27 de Septiembre -->
     <div class="timeline-item">
       <span class="timeline-date">27 de Septiembre</span>
       <div class="timeline-content">
@@ -133,7 +149,7 @@
       </div>
     </div>
 
-    <!-- EVENTO 5 -->
+    <!-- EVENTO 5: 30 de Septiembre -->
     <div class="timeline-item">
       <span class="timeline-date">30 de Septiembre</span>
       <div class="timeline-content">
